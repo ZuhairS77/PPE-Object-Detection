@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 6
+names: ['Gloves', 'Hard_hat', 'Mask', 'Person', 'Safety_boots', 'Vest']
+
+roboflow:
+  workspace: sdp-lfigk
+  project: ppe-detection-ozhfb
+  version: 14
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sdp-lfigk/ppe-detection-ozhfb/dataset/14

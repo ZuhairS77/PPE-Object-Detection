@@ -1,0 +1,31 @@
+# Local Python environments and bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+
+# Ignore generated experiment outputs but keep the checkpoint used by this project.
+runs/**
+!runs/detect/
+runs/detect/**
+!runs/detect/train2/
+runs/detect/train2/**
+!runs/detect/train2/weights/
+runs/detect/train2/weights/**
+!runs/detect/train2/weights/best.pt
+
+# Duplicate copy of the dataset test split; use dataset/test instead.
+/test/
+
+# Unrelated YOLO classification checkpoints (this is an object-detection project).
+/yolo11m-cls.pt
+/yolo11s-cls.pt
+
+# Dataset/Ultralytics-generated caches
+*.cache
